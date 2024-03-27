@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ChatMessageComponent, MyMessagesComponent } from '@Components/index';
+import { ChatMessageComponent, MyMessagesComponent, TypingLoaderComponent } from '@Components/index';
 
 @Component({
   selector: 'app-orthography-page',
@@ -8,7 +8,8 @@ import { ChatMessageComponent, MyMessagesComponent } from '@Components/index';
   imports: [
     CommonModule,
     ChatMessageComponent,
-    MyMessagesComponent
+    MyMessagesComponent,
+    TypingLoaderComponent
   ],
   templateUrl: './orthographyPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
