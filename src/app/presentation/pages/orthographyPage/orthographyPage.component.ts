@@ -15,4 +15,8 @@ import { ChatMessageComponent, MyMessagesComponent, TextMessageBoxComponent, Typ
   templateUrl: './orthographyPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class OrthographyPageComponent { }
+export default class OrthographyPageComponent { 
+  handleMessage( promp:string ){
+    console.log({promp})
+  }
+}
