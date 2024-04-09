@@ -1,4 +1,4 @@
-import { orthographyUseCase, prosConsDiscusserUseCase } from "@Use-cases/index";
+import { orthographyUseCase, prosConsDiscusserUseCase, prosConsStreamUseCase } from "@Use-cases/index";
 import { Injectable } from "@angular/core";
 import { from } from "rxjs";
 
@@ -11,5 +11,9 @@ export class OpenAiService{
 
     prosConsDiscusser(prompt: string){
         return from(prosConsDiscusserUseCase(prompt))
+    }
+
+    prosConsStreamDiscusser(prompt:string){
+        return prosConsStreamUseCase(prompt)
     }
 }
